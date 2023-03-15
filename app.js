@@ -2,7 +2,6 @@ const record = require('node-record-lpcm16');
 const speech = require('@google-cloud/speech');
 const { Configuration, OpenAIApi } = require("openai");
 const { sound } = require('./modules/manageAudio.js');
-const { handlePrompt } = require('./modules/managePrompt.js');
 const out = new sound();
 const client = new speech.SpeechClient({
   projectId: '',
@@ -49,9 +48,7 @@ recognizeStream.on('data', (data) => {
     .join('\n');
   if (transcription.trim().toLowerCase().startsWith(listenerOptions.name)) {
     const command = transcription.trim().toLowerCase().split(`${listenerOptions.name} `)[1];
-    const answer = handlePrompt(transcription);
-    if (answer === transcription) {
-      openai.createCompletion({
+    openai.createCompletion({
         model: "text-davinci-003",
         prompt: command,
         max_tokens: 3500,
@@ -62,14 +59,5 @@ recognizeStream.on('data', (data) => {
         console.log(`Response Received: ${response}`);
         out.create(response);
       });
-    } else if (Promise.resolve(answer) === answer) {
-      answer.then(answer => {
-        console.log(`Response Received: ${answer}`);
-        out.create(answer);
-      });
-    } else {
-      console.log(`Response Received: ${answer}`);
-      out.create(answer);
-    }
   }
 });

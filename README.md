@@ -40,4 +40,4 @@ The handlePrompt function takes a string as input and returns either a response 
 
 6. Run the program using node app.js.
 
-7. The program will listen for audio input and respond to prompts starting with the word 'sapphire'. Speak a command to trigger a response.
+7. The program will listen for audio input and respond to prompts starting with the word 'alexa'; unless you change it within app.js, line 22. Speak a command to trigger a response.

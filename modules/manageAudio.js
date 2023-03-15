@@ -25,7 +25,7 @@ function sound() {
 
     this.playResponse = function () {
         this.stop()
-        shell.exec('"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe" --play-and-exit --qt-start-minimized "C:\\Users\\username\\Desktop\\vr-ai\\response\\output.wav"', {
+        shell.exec('"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe" --play-and-exit --qt-start-minimized "C:\\Users\\username\\Desktop\\vr-ai\\output.wav"', {
             silent: true
         })
     };
@@ -55,7 +55,7 @@ function sound() {
                 const audioStream = new stream.PassThrough();
                 audioStream.end(response.audioContent);
 
-                const fileStream = fs.createWriteStream('./response/output.wav');
+                const fileStream = fs.createWriteStream('./output.wav');
                 audioStream.pipe(fileStream);
 
                 fileStream.on('finish', () => {

@@ -13,7 +13,7 @@ This file exports a sound class that is used to create audio files for text-to-s
 
 The sound class has a create method that takes a string as input and returns a Promise that resolves to an audio file path. The method uses the TextToSpeechClient to synthesize audio from the input string, and then writes the resulting audio file to disk.
 
-## Instructions
+## Setup
 
 1. Install the required node packages using the following commands:
     - **npm i --save node-record-lpcm16**

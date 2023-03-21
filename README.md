@@ -2,7 +2,9 @@
 
 This Voice Assistant project utilizes Google Cloud Speech-to-Text and Google Cloud Text-to-Speech APIs along with OpenAI's GPT-4 based API to create a voice-controlled assistant that listens to the user's voice commands and provides responses in spoken language.
 
-<a href="https://github.com/aaronmansfield5/Speech-To-Text-AI/issues">![Issues](https://img.shields.io/github/issues/aaronmansfield5/Speech-To-Text-AI?style=flat)</a>
+<a href="https://github.com/aaronmansfield5/Speech-To-Text-AI/issues">![Issues](https://img.shields.io/github/issues/aaronmansfield5/Speech-To-Text-AI)</a>
+<a href="https://github.com/aaronmansfield5/Speech-To-Text-AI/stargazers">![GitHub stars](https://img.shields.io/github/stars/aaronmansfield5/Speech-To-Text-AI)</a>
+<a href="https://github.com/aaronmansfield5/Speech-To-Text-AI/forks">![GitHub forks](https://img.shields.io/github/forks/aaronmansfield5/Speech-To-Text-AI)</a>
 
 ## Prerequisites
 

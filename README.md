@@ -64,7 +64,3 @@ This script handles the text-to-speech conversion and audio playback. It uses Go
 ## Contributing
 
 Please feel free to submit issues and pull requests for improvements and bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for more details.

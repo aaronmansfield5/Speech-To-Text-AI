@@ -1,36 +1,68 @@
-# Speech-To-Text-AI
-This program is a voice-controlled AI assistant that uses Google Cloud Speech-to-Text and Text-to-Speech APIs, as well as the OpenAI API to provide natural language processing capabilities. It can answer questions, complete prompts and generate responses using machine learning.
+# Speech-To-Text AI
 
-## index.js
-This file is the main entry point for the application. It uses several node-packages to enable voice recognition, text-to-speech conversion, and interaction with OpenAI's language model.
+This Voice Assistant project utilizes Google Cloud Speech-to-Text and Google Cloud Text-to-Speech APIs along with OpenAI's GPT-4 based API to create a voice-controlled assistant that listens to the user's voice commands and provides responses in spoken language.
 
-The node-record-lpcm16 package is used to record audio input from the user's microphone, which is then piped into the @google-cloud/speech package's SpeechClient to convert the speech to text. The resulting text is then passed to the handlePrompt function, which processes the user's input and returns a response.
+<a href="https://github.com/aaronmansfield5/Speech-To-Text-AI/issues">![Issues](https://img.shields.io/github/issues/aaronmansfield5/Speech-To-Text-AI?style=flat)</a>
 
-This is done using OpenAI's OpenAIApi package, which sends a prompt to the language model and receives a response. The response is then passed to the text-to-speech package's TextToSpeechClient to convert it to audio, which is played back to the user.
+## Prerequisites
 
-## manageAudio.js
-This file exports a sound class that is used to create audio files for text-to-speech playback. It uses the @google-cloud/text-to-speech package to synthesize audio from text input.
+- ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)
+- ![NPM](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)
+- <a href="https://console.cloud.google.com/">![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white)</a>
+- <a href="https://platform.openai.com/">![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)</a>
+- <a href="https://www.videolan.org/">![VLC media player](https://img.shields.io/badge/VLC_media_player-CB3837?style=flat&logo=vlcmediaplayer&logoColor=white)</a>
 
-The sound class has a create method that takes a string as input and returns a Promise that resolves to an audio file path. The method uses the TextToSpeechClient to synthesize audio from the input string, and then writes the resulting audio file to disk.
+## Installation
 
-## Setup
+1. Clone the repository:
 
-1. Install the required node packages using the following commands:
-    - **npm i --save node-record-lpcm16**
-    - **npm i --save @google-cloud/speech**
-    - **npm i --save @google-cloud/text-to-speech**
-    - **npm i --save openai**
+```bash
+git clone https://github.com/aaronmansfield5/Speech-To-Text-AI.git
+```
 
-2. Create a [Google Cloud](console.cloud.google.com) account and enable the Speech-to-Text and Text-to-Speech APIs. Obtain a JSON key file for authentication.
+2. Install the dependencies:
 
-3. Create an [OpenAI](https://platform.openai.com/) account and generate an API key.
+```bash
+cd voice-assistant
+npm install node-record-lpcm16 @google-cloud/speech @google-cloud/text-to-speech openai
+```
 
-4. Install [VLC](https://www.videolan.org/).
+3. Add your [Google Cloud](https://console.cloud.google.com/) Project's `projectId` and `keyFilename` to `app.js` and `manageAudio.js` files.
 
-4. Replace the keyFilename values in the client and textToSpeechClient objects with the path to your Google Cloud JSON key file.
+4. Add your [OpenAI](https://platform.openai.com/) API key to the `configuration` object in `app.js`.
 
-5. Replace the apiKey value in the configuration object with your OpenAI API key.
+5. Install [VLC Media Player](https://www.videolan.org/).
 
-6. Run the program using node app.js.
+## Usage
 
-7. The program will listen for audio input and respond to prompts starting with the word 'alexa'; unless you change it within app.js, line 22. Speak a command to trigger a response.
+1. Start the application:
+
+```bash
+node app.js
+```
+
+2. Speak a command prefixed with the listener's name, for example:
+
+```
+alexa what is the weather like today?
+```
+
+The Voice Assistant will process the command and provide a spoken response.
+
+## Modules
+
+### app.js
+
+This is the main script that handles voice recognition, command processing, and calling the OpenAI API for a response. It listens to the user's voice input, transcribes it using Google's Speech-to-Text API, and checks if the transcription starts with the listener's name. If it does, it sends the command to the OpenAI API to get a response and passes it to the `manageAudio.js` module.
+
+### manageAudio.js
+
+This script handles the text-to-speech conversion and audio playback. It uses Google's Text-to-Speech API to convert the OpenAI API response into an audio file (`output.wav`). It then plays the audio file using VLC media player.
+
+## Contributing
+
+Please feel free to submit issues and pull requests for improvements and bug fixes.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for more details.

@@ -38,6 +38,12 @@ npm install node-record-lpcm16 @google-cloud/speech @google-cloud/text-to-speech
 
 6. Install [SoX](https://sourceforge.net/projects/sox/files/sox/).
 
+7. Enable SoX debugging.
+
+```bash
+set DEBUG=record
+```
+
 ## Usage
 
 1. Start the application:

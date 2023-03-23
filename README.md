@@ -26,7 +26,7 @@ git clone https://github.com/aaronmansfield5/Speech-To-Text-AI.git
 
 ```bash
 cd voice-assistant
-npm install node-record-lpcm16 @google-cloud/speech @google-cloud/text-to-speech openai
+npm install node-record-lpcm16 @google-cloud/speech @google-cloud/text-to-speech openai shelljs
 ```
 
 3. Add your [Google Cloud](https://console.cloud.google.com/) Project's `projectId` and `keyFilename` to `app.js` and `manageAudio.js` files.

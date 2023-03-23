@@ -8,8 +8,8 @@ This Voice Assistant project utilizes Google Cloud Speech-to-Text and Google Clo
 
 ## Prerequisites
 
-- <a href="https://nodejs.org/">![](https://img.shields.io/badge/Node.js-v14.0%2B-brightgreen)</a>
-- <a href="https://www.npmjs.com/">![](https://img.shields.io/badge/npm-v6.0%2B-blue)</a>
+- <a href="https://nodejs.org/en">![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)</a>
+- <a href="https://www.npmjs.com/">![NPM](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)</a>
 - <a href="https://console.cloud.google.com/">![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white)</a>
 - <a href="https://platform.openai.com/">![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)</a>
 - <a href="https://www.videolan.org/">![VLC media player](https://img.shields.io/badge/VLC_media_player-CB3837?style=flat&logo=vlcmediaplayer&logoColor=white)</a>

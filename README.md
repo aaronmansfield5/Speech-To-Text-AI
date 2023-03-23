@@ -8,13 +8,12 @@ This Voice Assistant project utilizes Google Cloud Speech-to-Text and Google Clo
 
 ## Prerequisites
 
-- ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)
-- ![NPM](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)
+- <a href="https://nodejs.org/">![](https://img.shields.io/badge/Node.js-v14.0%2B-brightgreen)</a>
+- <a href="https://www.npmjs.com/">![](https://img.shields.io/badge/npm-v6.0%2B-blue)</a>
 - <a href="https://console.cloud.google.com/">![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white)</a>
 - <a href="https://platform.openai.com/">![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)</a>
 - <a href="https://www.videolan.org/">![VLC media player](https://img.shields.io/badge/VLC_media_player-CB3837?style=flat&logo=vlcmediaplayer&logoColor=white)</a>
 - <a href="https://chocolatey.org/install">![Chocolatey](https://img.shields.io/badge/Chocolatey-80B5E3?style=flat&logo=chocolatey&logoColor=white)</a>
-- - <a href="https://sourceforge.net/projects/sox/files/sox/">![Chocolatey](https://img.shields.io/badge/Chocolatey-80B5E3?style=flat&logo=chocolatey&logoColor=white)</a>
 - <a href="https://sourceforge.net/projects/sox/files/sox/">![SoX](https://img.shields.io/badge/SoX-FF6600?style=flat&logo=sourceforge&logoColor=white)</a>
 
 ## Installation

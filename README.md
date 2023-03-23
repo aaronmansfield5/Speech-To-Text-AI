@@ -13,6 +13,7 @@ This Voice Assistant project utilizes Google Cloud Speech-to-Text and Google Clo
 - <a href="https://console.cloud.google.com/">![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white)</a>
 - <a href="https://platform.openai.com/">![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)</a>
 - <a href="https://www.videolan.org/">![VLC media player](https://img.shields.io/badge/VLC_media_player-CB3837?style=flat&logo=vlcmediaplayer&logoColor=white)</a>
+- <a href="https://chocolatey.org/install">![Chocolatey](https://img.shields.io/badge/Chocolatey-80B5E3?style=flat&logo=chocolatey&logoColor=white)</a>
 - <a href="https://sourceforge.net/projects/sox/files/sox/">![SoX](https://img.shields.io/badge/SoX-FF6600?style=flat&logo=sourceforge&logoColor=white)</a>
 
 ## Installation
@@ -35,6 +36,8 @@ npm install node-record-lpcm16 @google-cloud/speech @google-cloud/text-to-speech
 4. Add your [OpenAI](https://platform.openai.com/) API key to the `configuration` object in `app.js`.
 
 5. Install [VLC Media Player](https://www.videolan.org/).
+
+6. Install [Chocolatey](https://chocolatey.org/install)
 
 6. Install SoX within an elevated Command Prompt or Powershell.
 

@@ -36,12 +36,10 @@ npm install node-record-lpcm16 @google-cloud/speech @google-cloud/text-to-speech
 
 5. Install [VLC Media Player](https://www.videolan.org/).
 
-6. Install [SoX](https://sourceforge.net/projects/sox/files/sox/).
-
-7. Enable SoX debugging.
+6. Install SoX within an elevated Command Prompt or Powershell.
 
 ```bash
-set DEBUG=record
+choco install sox.portable
 ```
 
 ## Usage

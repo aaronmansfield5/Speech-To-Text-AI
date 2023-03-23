@@ -14,6 +14,7 @@ This Voice Assistant project utilizes Google Cloud Speech-to-Text and Google Clo
 - <a href="https://platform.openai.com/">![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)</a>
 - <a href="https://www.videolan.org/">![VLC media player](https://img.shields.io/badge/VLC_media_player-CB3837?style=flat&logo=vlcmediaplayer&logoColor=white)</a>
 - <a href="https://chocolatey.org/install">![Chocolatey](https://img.shields.io/badge/Chocolatey-80B5E3?style=flat&logo=chocolatey&logoColor=white)</a>
+- - <a href="https://sourceforge.net/projects/sox/files/sox/">![Chocolatey](https://img.shields.io/badge/Chocolatey-80B5E3?style=flat&logo=chocolatey&logoColor=white)</a>
 - <a href="https://sourceforge.net/projects/sox/files/sox/">![SoX](https://img.shields.io/badge/SoX-FF6600?style=flat&logo=sourceforge&logoColor=white)</a>
 
 ## Installation
